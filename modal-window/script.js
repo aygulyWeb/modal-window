@@ -4,10 +4,11 @@ const modalClose = document.querySelector('.modal-close');
 
 
 modalOpen.addEventListener('click', () => {
-	modalWrap.style.display = 'block';
-
+	modalWrap.style.opacity = '1';
+	modalWrap.style.visibility = 'visible';
 })
 
 modalClose.addEventListener('click', () => {
-	modalWrap.style.display = 'none';
+	modalWrap.style.opacity = '0';
+	modalWrap.style.visibility = 'hidden';
 })
